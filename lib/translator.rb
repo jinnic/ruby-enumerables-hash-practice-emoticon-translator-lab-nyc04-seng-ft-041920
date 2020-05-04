@@ -8,9 +8,9 @@ require "pry"
 # Each emoticon name should point to a nested hash
 # containing two keys, :english and :japanese
 #  {
-#       'happy' => {
-#         :english => ":)",
-#         :japanese => "(＾ｖ＾)"
+#       'angel' => {
+#         :english => "O:)",
+#         :japanese => "☜(⌒▽⌒)☞"
 #       }
 #   }
 
