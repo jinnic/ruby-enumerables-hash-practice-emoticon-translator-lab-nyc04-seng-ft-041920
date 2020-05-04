@@ -13,6 +13,11 @@ require "yaml"
 #       }
 #   }
 
+current hash
+# {
+#   "angel" => [ "O:)", "☜(⌒▽⌒)☞" ]
+# }
+
 def load_library(file)
   
   emoticons = YAML.load_file(file)
