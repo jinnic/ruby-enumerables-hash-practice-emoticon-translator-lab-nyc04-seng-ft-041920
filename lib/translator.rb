@@ -34,20 +34,29 @@ def load_library(file)
   end
 end
 
-def get_japanese_emoticon(file, emoticon)
-  # takes a Western emoticon and returns Japanese version
+# takes a Western emoticon and returns Japanese version
+def get_japanese_emoticon(file, emoticon_input)
   
+  emoticons = load_library(file)
+  emoticons.each do |key, value|
+    if emoticon_input == emoticons[key][:english]
+      emoticons[key][:Japanese]
+    end
+  end
   
   
 end
 
-def get_english_meaning(file, emoticon)
-  # takes a Japanese emoticon and returns its name in English
+# takes a Japanese emoticon and returns its name in English
+def get_english_meaning(file, emoticon_input)
   emoticons = load_library(file)
   emoticons.each do |key, value|
-    emoticons[key][:Japanese]
+    if emoticon_input == emoticons[key][:Japanese]
+      key
+    end
   end
 end
 
 load_library('lib/emoticons.yml')
+get_english_meaning(file, emoticon_input)
 binding.pry
