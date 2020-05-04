@@ -59,5 +59,5 @@ end
 
 load_library('lib/emoticons.yml')
 get_english_meaning('lib/emoticons.yml', "(#^.^#)")
-get_japanese_emoticon('lib/emoticons.yml', emoticon_input)
+get_japanese_emoticon('lib/emoticons.yml', ":$")
 binding.pry
