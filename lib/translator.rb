@@ -28,7 +28,8 @@ def load_library(file)
   #value => ["O:)", "☜(⌒▽⌒)☞" ]
   
   emoticons.each do |key, value|
-end
+    if emoticons[key]
+  end
   
 end
 
