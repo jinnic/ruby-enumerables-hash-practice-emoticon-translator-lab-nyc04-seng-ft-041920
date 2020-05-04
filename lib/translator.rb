@@ -43,7 +43,7 @@ def get_japanese_emoticon(file, emoticon_input)
       #binding.pry
       return emoticons[key][:japanese]
     else
-      "Sorry, that emoticon was not found"
+      return "Sorry, that emoticon was not found"
     end
   end
   
@@ -58,7 +58,7 @@ def get_english_meaning(file, emoticon_input)
       #binding.pry
       return key
     else
-      "Sorry, that emoticon was not found"
+      return"Sorry, that emoticon was not found"
     end
   end
 end
