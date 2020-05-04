@@ -24,7 +24,11 @@ def load_library(file)
   emoticons = YAML.load_file(file)
   binding.pry
   
-  .to_h {|s| [s.ord, s]}
+  #key = "angel"
+  #value => ["O:)", "☜(⌒▽⌒)☞" ]
+  
+  emoticons.each do |key, value|
+end
   
 end
 
