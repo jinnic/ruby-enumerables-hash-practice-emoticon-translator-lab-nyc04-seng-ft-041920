@@ -14,7 +14,7 @@ require "pry"
 #       }
 #   }
 
-current hash
+#current hash
 # {
 #   "angel" => [ "O:)", "☜(⌒▽⌒)☞" ]
 # }
