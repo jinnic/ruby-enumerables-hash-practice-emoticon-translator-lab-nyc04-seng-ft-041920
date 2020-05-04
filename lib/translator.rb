@@ -1,6 +1,6 @@
 # require modules here
 require "yaml"
-
+require "pry"
 #emoticons = YAML.load_file('emoticons.yml')
 
 # method that loads the emoticons.yml file
@@ -22,7 +22,7 @@ current hash
 def load_library(file)
   
   emoticons = YAML.load_file(file)
-  
+  binding.pry
   
 end
 
