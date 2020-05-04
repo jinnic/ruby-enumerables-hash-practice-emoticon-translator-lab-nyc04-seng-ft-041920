@@ -30,8 +30,8 @@ def load_library(file)
     if emoticons[key].class == Array
       emoticons[key] = {:english => emoticons[key][0],:japanese => emoticons[key][1]}
     end
+    
   end
-  
 end
 
 def get_japanese_emoticon
@@ -43,3 +43,4 @@ def get_english_meaning
 end
 
 load_library('lib/emoticons.yml')
+binding.pry
