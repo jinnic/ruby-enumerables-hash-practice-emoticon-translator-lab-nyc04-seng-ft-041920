@@ -34,14 +34,15 @@ def load_library(file)
   end
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  # takes a Western emoticon and returns its name in English
+  
   
   
 end
 
 def get_english_meaning
-  # code goes here
+  # takes a Japanese emoticon and returns its name in English
 end
 
 load_library('lib/emoticons.yml')
