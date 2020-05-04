@@ -22,13 +22,17 @@ require "pry"
 def load_library(file)
   
   emoticons = YAML.load_file(file)
-  binding.pry
+  
   
   #key = "angel"
   #value => ["O:)", "☜(⌒▽⌒)☞" ]
   
   emoticons.each do |key, value|
-    if emoticons[key]
+    puts "#{emoticons[key]}, #{emoticons[key][0]}, #{emoticons[key][1]}"
+    binding.pry
+    if emoticons[key].class == Array
+      
+    end
   end
   
 end
