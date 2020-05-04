@@ -40,6 +40,7 @@ def get_japanese_emoticon(file, emoticon_input)
   emoticons = load_library(file)
   emoticons.each do |key, value|
     if emoticon_input == emoticons[key][:english]
+      binding.pry
       return emoticons[key][:Japanese]
     end
   end
@@ -52,6 +53,7 @@ def get_english_meaning(file, emoticon_input)
   emoticons = load_library(file)
   emoticons.each do |key, value|
     if emoticon_input == emoticons[key][:Japanese]
+      binding.pry
       return key
     end
   end
