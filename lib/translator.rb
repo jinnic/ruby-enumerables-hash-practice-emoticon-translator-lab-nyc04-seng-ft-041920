@@ -6,6 +6,12 @@ require "yaml"
 # return a hash where each key is the name of an emoticons
 # Each emoticon name should point to a nested hash
 # containing two keys, :english and :japanese
+#  {
+#       'happy' => {
+#         :english => ":)",
+#         :japanese => "(＾ｖ＾)"
+#       }
+#   }
 
 def load_library(file)
   
