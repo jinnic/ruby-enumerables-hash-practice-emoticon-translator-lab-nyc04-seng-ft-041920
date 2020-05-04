@@ -24,6 +24,8 @@ def load_library(file)
   emoticons = YAML.load_file(file)
   binding.pry
   
+  .to_h {|s| [s.ord, s]}
+  
 end
 
 def get_japanese_emoticon
