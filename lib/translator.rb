@@ -23,16 +23,16 @@ def load_library(file)
   
   emoticons = YAML.load_file(file)
   
-  
   #key = "angel"
   #value => ["O:)", "☜(⌒▽⌒)☞" ]
   
   emoticons.each do |key, value|
-    puts "#{emoticons[key]}, #{emoticons[key][0]}, #{emoticons[key][1]}"
-    binding.pry
+    
+    #puts "#{emoticons[key]}, #{emoticons[key][0]}, #{emoticons[key][1]}"
     if emoticons[key].class == Array
-      
+      emoticons[key] = {:english => emoticons[key][0],:japanese => emoticons[key][1]}
     end
+    
   end
   
 end
