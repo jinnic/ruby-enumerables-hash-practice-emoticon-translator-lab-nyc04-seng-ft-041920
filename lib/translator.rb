@@ -2,6 +2,10 @@
 require "yaml"
 #emoticons = YAML.load_file('emoticons.yml')
 
+# method that loads the emoticons.yml file
+# return a hash where each key is the name of an emoticons
+# Each emoticon name should point to a nested hash
+# containing 
 def load_library(file)
   
   emoticons = YAML.load_file(file)
