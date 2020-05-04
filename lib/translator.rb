@@ -1,6 +1,6 @@
 # require modules here
 require "yaml"
-require "pry"
+#require "pry"
 #emoticons = YAML.load_file('emoticons.yml')
 
 # method that loads the emoticons.yml file
@@ -40,7 +40,7 @@ def get_japanese_emoticon(file, emoticon_input)
   emoticons = load_library(file)
   emoticons.each do |key, value|
     if emoticon_input == emoticons[key][:english]
-      binding.pry
+      #binding.pry
       return emoticons[key][:japanese]
     end
   end
@@ -53,7 +53,7 @@ def get_english_meaning(file, emoticon_input)
   emoticons = load_library(file)
   emoticons.each do |key, value|
     if emoticon_input == emoticons[key][:japanese]
-      binding.pry
+      #binding.pry
       return key
     end
   end
@@ -62,4 +62,4 @@ end
 load_library('lib/emoticons.yml')
 get_english_meaning('lib/emoticons.yml', "(#^.^#)")
 get_japanese_emoticon('lib/emoticons.yml', ":$")
-binding.pry
+#binding.pry
